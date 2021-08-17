@@ -41,3 +41,10 @@ print(nums[::1])  # this will start from the first item the last item
 print(nums[::2])  # this will take every second items [1,3,5,7,9]
 
 print(nums[::-1])
+
+num_list = [3, 6, 9, 12, 15, 18, 21]
+
+squared_num_list = [x * x for x in num_list]
+
+print(num_list)
+print(squared_num_list)
