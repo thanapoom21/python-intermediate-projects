@@ -1,5 +1,5 @@
 import sys
-
+import timeit
 # Tuple: ordered, immutable, allows duplicate elements
 mytuple = tuple(["Thanapoom", 32, "Las Vegas"])
 print(mytuple)
@@ -36,3 +36,6 @@ a_tuple = (0, 1, 2, 3, "google", True)
 
 print(sys.getsizeof(a_list), "bytes")
 print(sys.getsizeof(a_tuple), "bytes")
+
+print(timeit.timeit(stmt="[0,1,2,3,4,5]", number=1000000))
+print(timeit.timeit(stmt="(0,1,2,3,4,5)", number=1000000))
